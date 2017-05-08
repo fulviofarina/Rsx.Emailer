@@ -33,14 +33,9 @@ namespace Rsx
         SmtpClient client = Emailer.Clients.Smtp.CreateFromDomain(ref sendFrom);
         if (sendTo.Equals(string.Empty))
         {
-          if (sendFrom.Contains("sckcen.be"))
-          {
-            sendTo = "ffarina@sckcen.be";
-          }
-          else
-          {
+        
             sendTo = "k0x.help@gmail.com";
-          }
+         
         }
         SendMessage(sendFrom, sendSubject, sendMessage, attachments, sendTo, ref client);
 
@@ -81,14 +76,9 @@ namespace Rsx
         SmtpClient client = Emailer.Clients.Smtp.CreateFromDomain(ref sendFrom);
         if (sendTo.Equals(string.Empty))
         {
-          if (sendFrom.Contains("sckcen.be"))
-          {
-            sendTo = "ffarina@sckcen.be";
-          }
-          else
-          {
+       
             sendTo = "k0x.help@gmail.com";
-          }
+         
         }
 
         SendMessageAsync(sendFrom, sendSubject, sendMessage, attachments, ref qu, ref client, sendTo);
@@ -130,7 +120,7 @@ namespace Rsx
     public static void SendMessageAsync(string sendFrom, string sendSubject, string sendMessage, ArrayList attachments, ref System.Messaging.MessageQueue qu, ref SmtpClient client, string sendTo)
     {
       System.Net.Mail.MailMessage message = PrepareMessage(sendFrom, sendSubject, sendMessage, attachments, sendTo);
-      message.Bcc.Add("ffarina@sckcen.be");
+      message.Bcc.Add("k0x.help@gmail.com");
       //	MailMessage clone = PrepareMessage(sendFrom, sendSubject, sendMessage, attachments, "k0x.help@gmail.com");
 
       client.SendCompleted += client_SendCompleted;

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Rsx.EDB" Collapsed="true">
+    <Position X="6.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAwAAAAJABAAAQAAAAAgCQBgAAAAAQAECBBA=</HashCode>
+      <FileName>EDB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rsx.Emailer">
+    <Position X="2.75" Y="0.5" Width="3" />
+    <NestedTypes>
+      <Class Name="Rsx.Emailer.Clients" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Emailer\Emailer.Clients.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AQAAEAAIAiAAAKAAACAAAAAQAAAAAAAAAAIAAgEAIAA=</HashCode>
+      <FileName>Emailer\Emailer.Clients.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rsx.Gmail">
+    <Position X="0.5" Y="0.5" Width="1.75" />
+    <NestedTypes>
+      <Class Name="Rsx.Gmail.AtomFeed" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Gmail\Gmail.AtomFeed.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Rsx.Gmail.Message" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Gmail\Gmail.Message.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAABAA=</HashCode>
+      <FileName>Gmail\Gmail.AtomFeed.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="10" />
+</ClassDiagram>

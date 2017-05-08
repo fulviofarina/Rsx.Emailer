@@ -55,8 +55,7 @@ namespace Rsx
         byte[] buffer = new byte[4048];
         int byteCount = 0;
 
-        try
-        {
+       
           string url = AtomFeed.FeedUrl;
 
           if (this.FeedLabel != string.Empty)
@@ -80,12 +79,7 @@ namespace Rsx
           _feedXml.LoadXml(sBuilder.ToString());
 
           loadFeedEntries();
-        }
-        catch (Exception ex)
-        {
-          //TODO: add error handling
-          // throw ex;
-        }
+       
       }
 
       public void GetFeed(int feedcount)
@@ -94,8 +88,7 @@ namespace Rsx
         byte[] buffer = new byte[4048];
         int byteCount = 0;
 
-        try
-        {
+       
           string url = AtomFeed.FeedUrl;
 
           if (this.FeedLabel != string.Empty)
@@ -125,12 +118,7 @@ namespace Rsx
           _feedXml.LoadXml(sBuilder.ToString());
 
           loadFeedEntries(feedcount);
-        }
-        catch (Exception ex)
-        {
-          //TODO: add error handling
-          // throw ex;
-        }
+      
       }
 
       /// <summary>
