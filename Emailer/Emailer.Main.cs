@@ -47,23 +47,32 @@ namespace Rsx
 
     public static void Dispose(ref SmtpClient client, ref System.Net.Mail.MailMessage message)
     {
-      if (message != null)
-      {
-        for (int i = 0; i < message.Attachments.Count; i++)
-        {
-          Attachment a = message.Attachments[i];
-          a.Dispose();
-          a = null;
-        }
-        message.Attachments.Clear();
-        message.Dispose();
-        message = null;
-      }
-      if (client != null)
-      {
-        client.Dispose();
-        client = null;
-      }
+            try
+            {
+                if (message != null)
+                {
+                    for (int i = 0; i < message.Attachments.Count; i++)
+                    {
+                        Attachment a = message.Attachments[i];
+                        a.Dispose();
+                        a = null;
+                    }
+                    message.Attachments.Clear();
+                    message.Dispose();
+                    message = null;
+                }
+                if (client != null)
+                {
+                    client.Dispose();
+                    client = null;
+                }
+            }
+            catch (Exception ex)
+            {
+
+                
+            }
+   
     }
 
     /// <summary>
