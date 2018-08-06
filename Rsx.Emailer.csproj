@@ -63,14 +63,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EDB.cs">
-      <DependentUpon>EDB.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="EDB.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EDB.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Emailer\Emailer.Clients.cs" />
     <Compile Include="Emailer\Emailer.QueryMsg.cs" />
     <Compile Include="Emailer\Emailer.Send.cs" />
@@ -82,17 +74,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
-    <None Include="EDB.xsc">
-      <DependentUpon>EDB.xsd</DependentUpon>
-    </None>
-    <None Include="EDB.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>EDB.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="EDB.xss">
-      <DependentUpon>EDB.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
